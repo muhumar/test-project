@@ -7,8 +7,6 @@ const Data: {
 } = rawData;
 
 class WeatherService {
-	// private readonly baseEndpoint = 'http://localhost:8080/api/weather';
-
 	async getWeatherByCity(city: string): Promise<ApiResponse<WeatherData>> {
 		if (!city || !city.trim()) {
 			return {

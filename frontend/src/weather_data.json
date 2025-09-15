@@ -1,0 +1,52 @@
+{
+  "cities": {
+    "london": {
+      "city": "London",
+      "temp": 15.5,
+      "condition": "Cloudy",
+      "humidity": 65
+    },
+    "berlin": {
+      "city": "Berlin",
+      "temp": 12.3,
+      "condition": "Rainy",
+      "humidity": 78
+    },
+    "paris": {
+      "city": "Paris",
+      "temp": 18.7,
+      "condition": "Sunny",
+      "humidity": 52
+    },
+    "tokyo": {
+      "city": "Tokyo",
+      "temp": 22.1,
+      "condition": "Partly Cloudy",
+      "humidity": 68
+    },
+    "new york": {
+      "city": "New York",
+      "temp": 16.9,
+      "condition": "Clear",
+      "humidity": 58
+    },
+    "sydney": {
+      "city": "Sydney",
+      "temp": 25.4,
+      "condition": "Sunny",
+      "humidity": 45
+    },
+    "mumbai": {
+      "city": "Mumbai",
+      "temp": 28.6,
+      "condition": "Humid",
+      "humidity": 82
+    },
+    "moscow": {
+      "city": "Moscow",
+      "temp": 2.1,
+      "condition": "Snow",
+      "humidity": 85
+    }
+  }
+}

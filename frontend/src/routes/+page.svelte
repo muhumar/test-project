@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { weatherService } from '$lib/services';
+	import { weatherDummyService } from '$lib/services';
 	import type { WeatherData } from '$lib/types';
 
 	let city = '';
@@ -15,7 +15,9 @@
 		weatherData = null;
 		
 		try {
-			const result = await weatherService.getWeatherByCity(city);
+			const result = await weatherDummyService.getWeatherByCity(city);
+			const result = await weatherService.getWeatherByCity(city); // SWITCH TO GO BE
+
 			
 			if (result.success && result.data) {
 				weatherData = result.data;

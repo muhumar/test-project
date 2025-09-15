@@ -16,7 +16,7 @@
 		
 		try {
 			const result = await weatherDummyService.getWeatherByCity(city);
-			const result = await weatherService.getWeatherByCity(city); // SWITCH TO GO BE
+			// const result = await weatherService.getWeatherByCity(city);
 
 			
 			if (result.success && result.data) {

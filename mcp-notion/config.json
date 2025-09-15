@@ -1,0 +1,10 @@
+{
+  "notion": {
+    "token": "YOUR_NOTION_INTEGRATION_TOKEN",
+    "database_id": "YOUR_DATABASE_ID"
+  },
+  "project": {
+    "name": "Weather API Project",
+    "description": "Go REST API with SvelteKit frontend"
+  }
+}

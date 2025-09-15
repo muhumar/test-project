@@ -11,7 +11,7 @@ This is a Weather Dashboard coding challenge requiring SvelteKit + TailwindCSS i
 - **SvelteKit API route**: `/api/weather?city={cityName}` returning JSON with city, temperature, condition
 - **UI matching exact mockup**: Centered gray background, white rounded card, search input + blue button, weather display
 - **External weather API integration**: OpenWeatherMap, WeatherAPI, or mock data
-- **AI usage documentation**: Screenshots in `/ai-conversations/` folder (mandatory for evaluation)
+- **AI usage documentation**: `/ai-conversations/`
 
 ## Expected Commands
 

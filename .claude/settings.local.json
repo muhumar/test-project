@@ -8,7 +8,11 @@
       "Bash(rm:*)",
       "Bash(mv:*)",
       "Bash(npm install:*)",
-      "Bash(go get:*)"
+      "Bash(go get:*)",
+      "Bash(go build:*)",
+      "Bash(find:*)",
+      "Bash(grep:*)",
+      "Bash(find:*)"
     ],
     "deny": []
   }

@@ -1,0 +1,18 @@
+{
+  "name": "notion-mcp-server",
+  "version": "1.0.0",
+  "description": "Simple MCP server for Notion documentation sync",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "node --watch index.js"
+  },
+  "dependencies": {
+    "@notionhq/client": "^2.2.15",
+    "@modelcontextprotocol/sdk": "^0.4.0"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

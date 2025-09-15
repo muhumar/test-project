@@ -26,5 +26,3 @@ This project was built using an AI-first approach as required by the challenge s
 - Component architecture and implementation
 - Styling and responsive design
 - API integration patterns
-
-Note: In a real implementation, screenshots of the actual AI conversations would be included in this folder to demonstrate the AI-assisted development process.

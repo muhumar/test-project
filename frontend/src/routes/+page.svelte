@@ -67,9 +67,10 @@
 				<p class="text-red-600">{error}</p>
 			</div>
 		{:else if weatherData}
+		{console.log({weatherData})}
 			<div class="mt-6 text-center bg-gray-50 p-4 rounded-lg shadow">
 				<p class="text-lg font-medium text-gray-700">🌍 City: <span class="font-semibold">{weatherData.city}</span></p>
-				<p class="text-4xl font-bold text-blue-600 mt-2">{weatherData.temp}°C</p>
+				<p class="text-4xl font-bold text-blue-600 mt-2">{weatherData.temp}&deg;C</p>
 				<p class="text-md text-gray-600 mt-1">{weatherData.condition}</p>
 				<p class="text-sm text-gray-500 mt-1">💧 Humidity: {weatherData.humidity}%</p>
 			</div>

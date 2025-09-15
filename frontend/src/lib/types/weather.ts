@@ -1,6 +1,6 @@
 export interface WeatherData {
 	city: string;
-	temp: number;
+	temperature: number;
 	condition: string;
 	humidity: number;
 }

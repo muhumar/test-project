@@ -2,7 +2,7 @@ import { apiService } from './api';
 import type { WeatherData, ApiResponse } from '../types/weather';
 
 class WeatherService {
-	private readonly baseEndpoint = 'http://localhost:8080/weather';
+	private readonly baseEndpoint = 'http://localhost:8080/api/weather';
 
 	async getWeatherByCity(city: string): Promise<ApiResponse<WeatherData>> {
 		if (!city || !city.trim()) {

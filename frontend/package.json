@@ -1,0 +1,28 @@
+{
+  "name": "weather-dashboard",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "build": "vite build",
+    "dev": "vite dev",
+    "preview": "vite preview",
+    "check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
+    "check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch"
+  },
+  "devDependencies": {
+    "@sveltejs/adapter-vercel": "^5.4.8",
+    "@sveltejs/kit": "^2.8.6",
+    "@sveltejs/vite-plugin-svelte": "^4.0.3",
+    "autoprefixer": "^10.4.20",
+    "postcss": "^8.5.3",
+    "svelte": "^5.5.0",
+    "svelte-check": "^4.0.8",
+    "tailwindcss": "^3.4.15",
+    "typescript": "^5.7.2",
+    "vite": "^5.4.10"
+  },
+  "type": "module",
+  "dependencies": {
+    "axios": "^1.12.2"
+  }
+}

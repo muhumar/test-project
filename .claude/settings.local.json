@@ -1,0 +1,15 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npx sv create:*)",
+      "Bash(mkdir:*)",
+      "Bash(npm install)",
+      "Bash(ls:*)",
+      "Bash(rm:*)",
+      "Bash(mv:*)",
+      "Bash(npm install:*)",
+      "Bash(go get:*)"
+    ],
+    "deny": []
+  }
+}

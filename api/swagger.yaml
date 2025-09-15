@@ -1,0 +1,81 @@
+openapi: 3.0.0
+info:
+  title: Weather API
+  description: A minimal REST API for fetching weather information
+  version: 1.0.0
+servers:
+  - url: http://localhost:8080
+    description: Development server
+paths:
+  /health:
+    get:
+      tags:
+        - health
+      summary: Health check endpoint
+      description: Returns the health status of the API
+      responses:
+        '200':
+          description: Service is healthy
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  status:
+                    type: string
+                    example: ok
+  /weather:
+    get:
+      tags:
+        - weather
+      summary: Get weather information
+      description: Fetch weather data for a specified city
+      parameters:
+        - name: city
+          in: query
+          required: true
+          description: City name
+          schema:
+            type: string
+            example: London
+      responses:
+        '200':
+          description: Weather information retrieved successfully
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  city:
+                    type: string
+                    example: London
+                  temp:
+                    type: number
+                    format: float
+                    example: 15.5
+                  condition:
+                    type: string
+                    example: Cloudy
+                  humidity:
+                    type: integer
+                    example: 65
+        '400':
+          description: Bad request - missing city parameter
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  error:
+                    type: string
+                    example: city parameter is required
+        '500':
+          description: Internal server error
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  error:
+                    type: string
+                    example: failed to fetch weather data
